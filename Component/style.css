@@ -1,0 +1,319 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+:root{
+    --bg-main:#131820;
+    --bg-button:#fffa00;
+    --button-color:#ac4f00;
+    --white:#fff;
+    --bg-login-page:#66209c;
+
+}
+.nav-bar{
+    display: flex;
+    height: 45px;
+    background-color: var(--bg-main);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 20px;
+}
+.home,.songs,.upload,.playlists{
+    color: var(--white);
+    padding: 0px 5px;
+    margin: 0px 5px;
+    font-weight: 600;
+}
+.nav-lists{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    color:var(--white);
+}
+.login,.signup{
+    background-color: var(--bg-button);
+    color: var(--button-color);
+    font-size: 15px;
+    padding: 3px 10px;
+    font-weight: 600;
+    margin: 0px 10px;
+    border-radius: 1rem;
+    font-family: 'Space Grotesk',sans-serif;
+}
+.list{
+    display: flex;
+    align-items: center;
+}
+#icons{
+    padding: 3px 5px 0 0;
+}
+
+.home-container{
+    background-image: url(./img4.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#heading{
+    color: var(--white);
+    font-size: xx-large;
+}
+#note{
+    color: var(--white);
+    font-size: x-large;
+    padding: 0 0 10px 0;
+}
+#home-login-stream{
+    background-color: var(--bg-button);
+    color: var(--button-color);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 0.2rem;
+    margin: 0px 20px 0 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Login page style */
+
+.login-container{
+    background-color: var(--bg-login-page);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--white);
+    padding: 20px 20px;
+    border-radius: 0.5rem;
+}
+.login-h3{
+    color: var(--bg-login-page);
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+input{
+    padding: 5px 15px;
+    border: none;
+    border-bottom: 2px solid var(--bg-login-page);
+}
+label{
+    padding: 0px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+label>span{
+    text-align: right;
+    color: red;
+    font-size: 12px;
+}
+.login-submit{
+    padding: 5px 10px;
+    background-color: var(--bg-login-page);
+    border-radius: 0.2rem;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+.login-p{
+    padding: 5px 0 0 0;
+}
+input:focus{
+    outline: none;
+}
+
+/* Register style */
+
+.register-container{
+    background-color: var(--bg-login-page);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-h3{
+    color: var(--bg-login-page);
+    text-decoration: 2px underline var(--bg-login-page);
+    padding-bottom: 10px;
+}
+.register-form{
+    background-color: var(--white);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+}
+.register-btn{
+    padding: 5px 10px;
+    background-color: var(--bg-login-page);
+    border-radius: 0.2rem;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+.register-p{
+    padding: 10px 0 0 0;
+}
+
+/* Upload page style */
+
+.upload-container{
+    width: 100%;
+    height: 100vh;
+    background-color: #213043;
+    text-align: left;
+    padding: 0px 100px;
+}
+.upload-container>h2{
+    text-align: center;
+    color: var(--white);
+    font-weight: 400;
+    padding: 20px;
+}
+#upload-input{
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 0.2rem;
+    border: none;
+    margin-bottom: 7px;
+}
+#upload-label{
+    padding: 5px;
+    color: var(--white);
+}
+#upload-file{
+    width: 100%;
+    border-radius: 0.2rem;
+    border: none;
+    margin-bottom: 7px;
+    padding: 0px;
+    color: var(--white);
+}
+#upload-btn{
+    background-color: var(--bg-button);
+    color: var(--button-color);
+    border: none;
+    padding: 5px 25px;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-top: 10px;
+}
+.song-container{
+    background-color: #213043;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    flex-direction: column;
+}
+.song-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightslategray;
+    text-align: left;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 0.2rem;
+}
+.song-name{
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.song-imgg{
+    width: 1.2cm;
+    height: 1.2cm;
+    border-radius: 0.2rem;
+}
+.song{
+    color: #fff;
+    padding: 20px;
+}
+.song-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+.p-icons{
+    font-size: 26px;
+}
+.audioplayer-container{
+    background-color: #131b2b;
+    padding: 10px;
+}
+.audio::webkit-media-controls-panel{
+    background-color: #fff;
+}
+.playlists-container{
+    background-color: #213043;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+.create{
+    background-color: #fffa00;
+    padding: 5px 10px;
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+#create-playlist{
+    background-color: #fff;
+    padding: 40px 40px;
+    margin: auto;
+    border-radius: 1rem;
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#playlist-input{
+    border-bottom: 1.5px solid black;
+    font-size: 15px;
+    margin: 0 0 15px 0;
+    font-weight: bold;
+}
+.create-btn{
+    background-color: #fffa00;
+    padding: 5px 10px;
+    border: none;
+    color: #ac4f00;
+    border-radius: 1rem;
+}
+#remove-playlist{
+    display: none;
+}
+.close-btn{
+    color: red;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
